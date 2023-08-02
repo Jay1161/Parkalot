@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "142962681798",
+    "project_id": "pakring11",
+    "storage_bucket": "pakring11.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142962681798:android:046271ceeed9d1cef774c7",
+        "android_client_info": {
+          "package_name": "com.example.pakring"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142962681798-9rfrceakqrnebivnlnegrihl7qppodif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2vi_m2TjRQPSOjdnLKTj7CP3LbkR9h20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142962681798-9rfrceakqrnebivnlnegrihl7qppodif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:142962681798:android:7ba93bddebd3c79bf774c7",
+        "android_client_info": {
+          "package_name": "com.example.parkalot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "142962681798-9rfrceakqrnebivnlnegrihl7qppodif.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA2vi_m2TjRQPSOjdnLKTj7CP3LbkR9h20"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "142962681798-9rfrceakqrnebivnlnegrihl7qppodif.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
