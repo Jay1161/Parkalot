@@ -52,59 +52,64 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <Button
-                    android:id="@+id/btnlogout"
-                    android:backgroundTint="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_alignParentRight="true"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginRight="10dp"
-                    android:textSize="15dp"
-                    android:padding="10dp"
-                    android:text="Logout"></Button>
+<!--                <Button-->
+<!--                    android:id="@+id/btnlogout"-->
+<!--                    android:backgroundTint="@color/black"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:textColor="@android:color/white"-->
+<!--                    android:layout_alignParentRight="true"-->
+<!--                    android:layout_marginTop="10dp"-->
+<!--                    android:layout_marginRight="10dp"-->
+<!--                    android:textSize="15dp"-->
+<!--                    android:padding="10dp"-->
+<!--                    android:text="Logout"></Button>-->
 
             </RelativeLayout>
 
             <!-- Parking Location Image -->
-            <ImageView
-                android:id="@+id/locationImage"
-                android:layout_width="wrap_content"
-                android:layout_height="100dp"
-                android:layout_marginTop="50dp"
-                android:src="@drawable/riverfront"
-                android:layout_marginLeft="30dp"
-                android:layout_marginRight="30dp"
-                android:layout_gravity="center"
-                android:scaleType="centerCrop"></ImageView>
+<!--            <ImageView-->
+<!--                android:id="@+id/locationImage"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="100dp"-->
+<!--                android:layout_marginTop="50dp"-->
+<!--                android:src="@drawable/riverfront"-->
+<!--                android:layout_marginLeft="30dp"-->
+<!--                android:layout_marginRight="30dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:scaleType="centerCrop"></ImageView>-->
 
-            <!-- Parking Location Name -->
-            <TextView
-                android:id="@+id/locationName"
-                android:layout_width="wrap_content"
+<!--            &lt;!&ndash; Parking Location Name &ndash;&gt;-->
+<!--            <TextView-->
+<!--                android:id="@+id/locationName"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/locationImage"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textColor="@color/black"-->
+<!--                android:textStyle="bold"-->
+<!--                android:text="Riverfront Parking"-->
+<!--                android:textSize="20dp"></TextView>-->
+
+<!--            &lt;!&ndash; Button to show parking slots &ndash;&gt;-->
+<!--            <Button-->
+<!--                android:id="@+id/btnslot"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_below="@id/locationName"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginTop="10dp"-->
+<!--                android:backgroundTint="@color/black"-->
+<!--                android:text="Book Slot"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textSize="15dp"></Button>-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rec"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/locationImage"
-                android:layout_marginTop="10dp"
-                android:layout_gravity="center"
-                android:textColor="@color/black"
-                android:textStyle="bold"
-                android:text="Riverfront Parking"
-                android:textSize="20dp"></TextView>
-
-            <!-- Button to show parking slots -->
-            <Button
-                android:id="@+id/btnslot"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/locationName"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                android:backgroundTint="@color/black"
-                android:text="Book Slot"
-                android:textColor="@color/white"
-                android:textSize="15dp"></Button>
-
+                android:layout_below="@+id/btnlogout"
+                android:layout_marginTop="10dp"/>
         </LinearLayout>
     </ScrollView>
 </RelativeLayout>

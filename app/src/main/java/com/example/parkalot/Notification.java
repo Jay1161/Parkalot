@@ -38,11 +38,11 @@ public class Notification extends AppCompatActivity {
                 return true;
             }
 
-            else if(id == R.id.profile) {
-                startActivity(new Intent(getApplicationContext(),Profile.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
+//            else if(id == R.id.profile) {
+//                startActivity(new Intent(getApplicationContext(),Profile.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
 
             else if(id == R.id.notification) {
                 return true;

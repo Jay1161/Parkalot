@@ -37,11 +37,11 @@ public class About extends AppCompatActivity {
                 return true;
             }
 
-            else if(id == R.id.profile) {
-                startActivity(new Intent(getApplicationContext(),Profile.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
+//            else if(id == R.id.profile) {
+//                startActivity(new Intent(getApplicationContext(),Profile.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
 
             else if(id == R.id.notification) {
                 startActivity(new Intent(getApplicationContext(),Notification.class));

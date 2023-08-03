@@ -18,6 +18,7 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
@@ -28,7 +29,7 @@ import java.util.Locale;
 
 public class Profile extends AppCompatActivity {
 
-    BottomNavigationView bottomNavigationView;
+//    BottomNavigationView bottomNavigationView;
     EditText name, email, contact, dateOfBirth;
     Button editProfile,submit;
     String emailPattern = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+";
@@ -45,8 +46,8 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
-        bottomNavigationView = findViewById(R.id.bnView);
-        bottomNavigationView.setSelectedItemId(R.id.profile);
+//        bottomNavigationView = findViewById(R.id.bnView);
+//        bottomNavigationView.setSelectedItemId(R.id.profile);
         name = findViewById(R.id.profile_name);
         email = findViewById(R.id.profile_email);
         contact = findViewById(R.id.profile_contact);
@@ -56,7 +57,7 @@ public class Profile extends AppCompatActivity {
         female = findViewById(R.id.profile_female);
         gender = findViewById(R.id.profile_gender);
         submit = findViewById(R.id.profile_submit_button);
-        editProfile = findViewById(R.id.profile_button);
+        //editProfile = findViewById(R.id.profile_button);
 
         arrayList = new ArrayList<>();
         arrayList.add("Ahmedabad");
@@ -75,39 +76,39 @@ public class Profile extends AppCompatActivity {
         adapter.setDropDownViewResource(android.R.layout.simple_list_item_checked);
         spinner.setAdapter(adapter);
 
-        bottomNavigationView.setOnItemSelectedListener(item -> {
-
-            int id = item.getItemId();
-
-            if (id == R.id.home){
-                startActivity(new Intent(getApplicationContext(),MainActivity.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
-
-            else if (id == R.id.dashboard) {
-                startActivity(new Intent(getApplicationContext(),Dashboard.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
-
-            else if(id == R.id.profile) {
-                return true;
-            }
-
-            else if(id == R.id.notification) {
-                startActivity(new Intent(getApplicationContext(),Notification.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
-
-            else {
-                startActivity(new Intent(getApplicationContext(),About.class));
-                overridePendingTransition(0,0);
-                return true;
-            }
-
-        });
+//        bottomNavigationView.setOnItemSelectedListener(item -> {
+//
+//            int id = item.getItemId();
+//
+//            if (id == R.id.home){
+//                startActivity(new Intent(getApplicationContext(),MainActivity.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
+//
+//            else if (id == R.id.dashboard) {
+//                startActivity(new Intent(getApplicationContext(),Dashboard.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
+//
+//            else if(id == R.id.profile) {
+//                return true;
+//            }
+//
+//            else if(id == R.id.notification) {
+//                startActivity(new Intent(getApplicationContext(),Notification.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
+//
+//            else {
+//                startActivity(new Intent(getApplicationContext(),About.class));
+//                overridePendingTransition(0,0);
+//                return true;
+//            }
+//
+//        });
 
         gender.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
@@ -142,6 +143,13 @@ public class Profile extends AppCompatActivity {
                     pickerDialog.getDatePicker().setMaxDate(System.currentTimeMillis());
                     pickerDialog.show();
                 }
+            }
+        });
+
+        submit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(Profile.this, "Submitted", Toast.LENGTH_SHORT).show();
             }
         });
 

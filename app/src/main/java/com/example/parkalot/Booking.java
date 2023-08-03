@@ -52,7 +52,7 @@ public class Booking extends AppCompatActivity {
         imgdate=(ImageView)findViewById(R.id.imgdate);
         tvtime=(TextView)findViewById(R.id.tvtime);
         imgtime=(ImageView)findViewById(R.id.imgtime);
-        bookslot=(TextView)findViewById(R.id.bookslot);
+        //bookslot=(TextView)findViewById(R.id.bookslot);
         autoCompleteTxt = findViewById(R.id.auto_complete_txt);
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
